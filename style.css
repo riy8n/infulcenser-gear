@@ -3,7 +3,7 @@
 
 /* shared styles */
 main{
-    margin: ;
+    margin: 10px 130px 10px 130px;
 }
 
 .primary-font{
@@ -22,6 +22,9 @@ background: rgb(224, 44, 109);
 }
 
 /* header styles */
+header{
+    margin: 80px 125px 125px 50px;
+}
 .nav-container{
     display: flex;
     justify-content: space-between;
@@ -47,6 +50,11 @@ background: rgb(224, 44, 109);
 .banner-img{
     /* height: 400px; */
     width: 100%;
+    padding: 30px;
+    /* padding-top: 30px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    padding-right: 10px; */
    
 }
 .banner-img-section{
@@ -67,4 +75,48 @@ margin-bottom: 16px;
     display: flex;
 
 }
+/* card sextion */
+.card{
+    width: 1250px;
+    height: 1600px;
+
+   
+
+}
+.card-them{
+    justify-content: center;
+    text-align: center;
+
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-left: 50px;
+}
+.card-img{
+    width: 100%;
+}
+.card-title{
+    color: rgb(58, 58, 58);
+font-family: Poppins;
+font-size: 1.9rem;
+font-weight: 600;
+line-height: 70px;
+
+}
+.card-details{
+    color: rgb(120, 120, 133);
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding-top: 0px;
+  
+}
+.btn{
+    text-align: right;
+    color: rgba(224, 44, 109, 0.87);
+font-size: 1rem;
+font-weight: 700;
+}
+
 
