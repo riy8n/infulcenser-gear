@@ -2,7 +2,7 @@
 
 
 /* shared styles */
-main{
+.main{
     margin: 10px 130px 10px 130px;
 }
 
@@ -59,6 +59,7 @@ header{
 }
 .banner-img-section{
     background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
 
 }
 .banner-title{
@@ -71,28 +72,45 @@ margin-bottom: 16px;
 /* website section */
 .website-img-section{
     margin-top: 100px;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 24px;
     justify-content: space-around;
-    display: flex;
+    align-items: center;
+    
+   
 
 }
+
 /* card sextion */
 .card{
-    width: 1250px;
+    width: 1400px;
     height: 1600px;
+    margin: 0 auto;
 
    
 
 }
-.card-them{
+/* .card-them{
     justify-content: center;
-    text-align: center;
 
-}
+} */
 .card-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 14px;
-    margin-left: 50px;
+    gap:40px ;
+    
+  
+}
+.card-content{
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+    padding: 10px;
+  
+}
+.card-img-content{
+    border-radius: 5px;
 }
 .card-img{
     width: 100%;
@@ -109,7 +127,7 @@ line-height: 70px;
     color: rgb(120, 120, 133);
     font-size: 0.92rem;
     font-weight: 700;
-    padding-top: 0px;
+  margin-top: 1px;
   
 }
 .btn{
@@ -118,5 +136,52 @@ line-height: 70px;
 font-size: 1rem;
 font-weight: 700;
 }
+
+
+
+ @media screen and (max-width: 576px) {
+    .nav-container, 
+    .banner-section, .website-img-section {
+        flex-direction: column;
+    }
+    .main{
+        margin: 0 auto;
+
+    }
+    .website-img-section{
+        min-width: 20px;
+
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+        border-radius: 5px;
+box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+background: rgb(255, 255, 255);
+padding: 2px;
+gap: 15px;
+
+    
+        
+    
+    }
+    /* .card-img{
+        width: 100%;
+        height: 50%;
+    } */
+   .card-img-content{
+width: 300px;
+height: 256px;
+left: 29px;
+right: 0;
+top: 797px;
+
+
+   }
+    
+} 
 
 
